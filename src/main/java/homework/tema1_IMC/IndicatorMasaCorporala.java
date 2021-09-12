@@ -4,12 +4,14 @@
    - height >> data introduced must be in "m" positive, and not in "cm" positive;
  */
 
-package homework;
+package homework.tema1_IMC;
+
+import org.imgscalr.Scalr;
 
 import java.util.Scanner;
 
-public class Main {
-    //am adaugat ceva aditional;
+public class IndicatorMasaCorporala {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,7 +20,6 @@ public class Main {
 
         System.out.println("Please enter your height(m): ");
         double height = scanner.nextDouble();
-
 
         double IMC = weight / Math.pow(height, 2);
 
